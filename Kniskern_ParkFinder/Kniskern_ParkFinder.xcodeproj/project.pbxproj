@@ -12,6 +12,9 @@
 		3F569B4C2246BFB000664F90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F569B4A2246BFB000664F90 /* Main.storyboard */; };
 		3F569B4E2246BFB200664F90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F569B4D2246BFB200664F90 /* Assets.xcassets */; };
 		3F569B512246BFB200664F90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F569B4F2246BFB200664F90 /* LaunchScreen.storyboard */; };
+		3F569B5A2246C04400664F90 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F569B592246C04400664F90 /* MapKit.framework */; };
+		3F569B5C2246C0CE00664F90 /* parks.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F569B5B2246C0CE00664F90 /* parks.json */; };
+		3F569B602246C3F100664F90 /* StatePark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F569B5F2246C3F100664F90 /* StatePark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		3F569B4D2246BFB200664F90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F569B502246BFB200664F90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F569B522246BFB200664F90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F569B592246C04400664F90 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3F569B5B2246C0CE00664F90 /* parks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = parks.json; sourceTree = "<group>"; };
+		3F569B5F2246C3F100664F90 /* StatePark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F569B5A2246C04400664F90 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,7 @@
 			children = (
 				3F569B452246BFB000664F90 /* Kniskern_ParkFinder */,
 				3F569B442246BFB000664F90 /* Products */,
+				3F569B582246C04400664F90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +63,47 @@
 			isa = PBXGroup;
 			children = (
 				3F569B462246BFB000664F90 /* AppDelegate.swift */,
-				3F569B482246BFB000664F90 /* ViewController.swift */,
+				3F569B5D2246C3A800664F90 /* VC */,
+				3F569B612246C5E200664F90 /* Model */,
+				3F569B5E2246C3B700664F90 /* Data */,
 				3F569B4A2246BFB000664F90 /* Main.storyboard */,
 				3F569B4D2246BFB200664F90 /* Assets.xcassets */,
 				3F569B4F2246BFB200664F90 /* LaunchScreen.storyboard */,
 				3F569B522246BFB200664F90 /* Info.plist */,
 			);
 			path = Kniskern_ParkFinder;
+			sourceTree = "<group>";
+		};
+		3F569B582246C04400664F90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F569B592246C04400664F90 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F569B5D2246C3A800664F90 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				3F569B482246BFB000664F90 /* ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		3F569B5E2246C3B700664F90 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3F569B5B2246C0CE00664F90 /* parks.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3F569B612246C5E200664F90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F569B5F2246C3F100664F90 /* StatePark.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +138,11 @@
 				TargetAttributes = {
 					3F569B422246BFB000664F90 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -125,6 +172,7 @@
 				3F569B512246BFB200664F90 /* LaunchScreen.storyboard in Resources */,
 				3F569B4E2246BFB200664F90 /* Assets.xcassets in Resources */,
 				3F569B4C2246BFB000664F90 /* Main.storyboard in Resources */,
+				3F569B5C2246C0CE00664F90 /* parks.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +185,7 @@
 			files = (
 				3F569B492246BFB000664F90 /* ViewController.swift in Sources */,
 				3F569B472246BFB000664F90 /* AppDelegate.swift in Sources */,
+				3F569B602246C3F100664F90 /* StatePark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
