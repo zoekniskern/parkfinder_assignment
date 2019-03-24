@@ -90,9 +90,10 @@ class ViewController: UIViewController, MKMapViewDelegate {
             
             //print(newPark)
             parks += [newPark]
+            ParkData.shared.parks = parks
             
             //ADD ANNOTATION
-            mapView.addAnnotations(parks)
+            mapView.addAnnotations(ParkData.shared.parks)
             
             //ZOOM IT
             let nyRegion = MKCoordinateRegion(center: parks[0].coordinate, latitudinalMeters: metersPerMile * 100, longitudinalMeters: metersPerMile * 100)

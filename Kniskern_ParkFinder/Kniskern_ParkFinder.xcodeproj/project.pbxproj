@@ -15,6 +15,8 @@
 		3F569B5A2246C04400664F90 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F569B592246C04400664F90 /* MapKit.framework */; };
 		3F569B5C2246C0CE00664F90 /* parks.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F569B5B2246C0CE00664F90 /* parks.json */; };
 		3F569B602246C3F100664F90 /* StatePark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F569B5F2246C3F100664F90 /* StatePark.swift */; };
+		3FF4C5B2224819E7006C9DE9 /* ParksTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4C5B1224819E7006C9DE9 /* ParksTableVC.swift */; };
+		3FF4C5B422481C57006C9DE9 /* ParkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4C5B322481C57006C9DE9 /* ParkData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		3F569B592246C04400664F90 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3F569B5B2246C0CE00664F90 /* parks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = parks.json; sourceTree = "<group>"; };
 		3F569B5F2246C3F100664F90 /* StatePark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePark.swift; sourceTree = "<group>"; };
+		3FF4C5B1224819E7006C9DE9 /* ParksTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksTableVC.swift; sourceTree = "<group>"; };
+		3FF4C5B322481C57006C9DE9 /* ParkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				3F569B482246BFB000664F90 /* ViewController.swift */,
+				3FF4C5B1224819E7006C9DE9 /* ParksTableVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				3F569B5F2246C3F100664F90 /* StatePark.swift */,
+				3FF4C5B322481C57006C9DE9 /* ParkData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,7 +191,9 @@
 			files = (
 				3F569B492246BFB000664F90 /* ViewController.swift in Sources */,
 				3F569B472246BFB000664F90 /* AppDelegate.swift in Sources */,
+				3FF4C5B422481C57006C9DE9 /* ParkData.swift in Sources */,
 				3F569B602246C3F100664F90 /* StatePark.swift in Sources */,
+				3FF4C5B2224819E7006C9DE9 /* ParksTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
