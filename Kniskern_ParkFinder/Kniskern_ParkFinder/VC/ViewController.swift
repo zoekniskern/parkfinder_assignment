@@ -9,6 +9,9 @@
 import UIKit
 import MapKit
 
+let showParkOnMapNotification = NSNotification.Name("showParkOnMapNotification")
+let isPad = UIDevice.current.userInterfaceIdiom == .pad
+
 class ViewController: UIViewController, MKMapViewDelegate {
     
     var parks = [StatePark]()
@@ -21,6 +24,12 @@ class ViewController: UIViewController, MKMapViewDelegate {
         mapView.delegate = self
         
         loadData()
+        
+        //get notification center - its a singleton
+        let nc = NotificationCenter.default
+        
+        //register as an observer
+        nc.addObserver(self, selector: #selector(showMap), name: showParkOnMapNotification, object: nil)
         
         //test park
 //        let park1 = StatePark(name:"Letchworth State Park", latitude: 42.685, longitude: -77.95944)
@@ -141,6 +150,22 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         print("Tapped info button fpr \(annotation.description)")
         print("Do something interesting like visit URL, open in Maps etc")
+    }
+    
+    // MARK: - Notifications
+    @objc func showMap(notification: NSNotification){
+        //change to map tab - this works as long as the map is on first tab
+        tabBarController?.selectedIndex = 0
+        
+        //select the park annotation that was passed over
+        if let park = notification.userInfo!["park"] as? MKAnnotation{
+            mapView.selectAnnotation(park, animated: true)
+        }
+    }
+    
+    // MARK: - Cleanup
+    deinit{
+        NotificationCenter.default.removeObserver(self)
     }
 
 

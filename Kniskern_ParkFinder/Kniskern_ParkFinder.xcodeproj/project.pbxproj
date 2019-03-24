@@ -17,6 +17,7 @@
 		3F569B602246C3F100664F90 /* StatePark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F569B5F2246C3F100664F90 /* StatePark.swift */; };
 		3FF4C5B2224819E7006C9DE9 /* ParksTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4C5B1224819E7006C9DE9 /* ParksTableVC.swift */; };
 		3FF4C5B422481C57006C9DE9 /* ParkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4C5B322481C57006C9DE9 /* ParkData.swift */; };
+		3FF4C5B622481F65006C9DE9 /* ParkDetailTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4C5B522481F65006C9DE9 /* ParkDetailTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3F569B5F2246C3F100664F90 /* StatePark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePark.swift; sourceTree = "<group>"; };
 		3FF4C5B1224819E7006C9DE9 /* ParksTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksTableVC.swift; sourceTree = "<group>"; };
 		3FF4C5B322481C57006C9DE9 /* ParkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkData.swift; sourceTree = "<group>"; };
+		3FF4C5B522481F65006C9DE9 /* ParkDetailTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			children = (
 				3F569B482246BFB000664F90 /* ViewController.swift */,
 				3FF4C5B1224819E7006C9DE9 /* ParksTableVC.swift */,
+				3FF4C5B522481F65006C9DE9 /* ParkDetailTableVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				3F569B472246BFB000664F90 /* AppDelegate.swift in Sources */,
 				3FF4C5B422481C57006C9DE9 /* ParkData.swift in Sources */,
 				3F569B602246C3F100664F90 /* StatePark.swift in Sources */,
+				3FF4C5B622481F65006C9DE9 /* ParkDetailTableVC.swift in Sources */,
 				3FF4C5B2224819E7006C9DE9 /* ParksTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
