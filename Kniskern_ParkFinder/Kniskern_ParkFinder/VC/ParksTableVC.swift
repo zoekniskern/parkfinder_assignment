@@ -11,6 +11,7 @@ import UIKit
 class ParksTableVC: UITableViewController {
 
     //var parks = [StatePark]()
+    var parkData: ParkData!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,13 +32,13 @@ class ParksTableVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return ParkData.shared.parks.count
+        return parkData.parks.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ParkCell", for: indexPath)
         
-        cell.textLabel?.text = ParkData.shared.parks[indexPath.row].title
+        cell.textLabel?.text = parkData.parks[indexPath.row].title
 
         // Configure the cell...
 
@@ -87,12 +88,12 @@ class ParksTableVC: UITableViewController {
         // Pass the selected object to the new view controller.
         if let indexPath = tableView.indexPathForSelectedRow{
             let selectedRow = indexPath.row
-            guard selectedRow < ParkData.shared.parks.count else{
+            guard selectedRow < parkData.parks.count else{
                 print("row \(selectedRow) is not in parks!)")
                 return
             }
             let detailVC = segue.destination as! ParkDetailTableVC
-            detailVC.park = ParkData.shared.parks[selectedRow]
+            detailVC.park = parkData.parks[selectedRow]
         }
     }
 }

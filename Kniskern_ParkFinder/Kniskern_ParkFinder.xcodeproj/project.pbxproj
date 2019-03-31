@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F3222C0225152EE009798A4 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3222BF225152EE009798A4 /* MyTabBarController.swift */; };
 		3F569B472246BFB000664F90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F569B462246BFB000664F90 /* AppDelegate.swift */; };
 		3F569B492246BFB000664F90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F569B482246BFB000664F90 /* ViewController.swift */; };
 		3F569B4C2246BFB000664F90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F569B4A2246BFB000664F90 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F3222BF225152EE009798A4 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		3F569B432246BFB000664F90 /* Kniskern_ParkFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kniskern_ParkFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F569B462246BFB000664F90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F569B482246BFB000664F90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				3F569B482246BFB000664F90 /* ViewController.swift */,
 				3FF4C5B1224819E7006C9DE9 /* ParksTableVC.swift */,
 				3FF4C5B522481F65006C9DE9 /* ParkDetailTableVC.swift */,
+				3F3222BF225152EE009798A4 /* MyTabBarController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				3F569B602246C3F100664F90 /* StatePark.swift in Sources */,
 				3FF4C5B622481F65006C9DE9 /* ParkDetailTableVC.swift in Sources */,
 				3FF4C5B2224819E7006C9DE9 /* ParksTableVC.swift in Sources */,
+				3F3222C0225152EE009798A4 /* MyTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

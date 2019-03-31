@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="-534" y="-338"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--My Tab Bar Controller-->
         <scene sceneID="JqK-3X-6pG">
             <objects>
-                <tabBarController id="HXt-0H-G3O" sceneMemberID="viewController">
+                <tabBarController id="HXt-0H-G3O" customClass="MyTabBarController" customModule="Kniskern_ParkFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Ai-A7-Klf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
